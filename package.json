@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lerna": "^3.22.1"
+  },
+  "scripts": {
+    "serve": "lerna run serve --stream",
+    "serve:prod": "lerna run serve:prod --parallel",
+    "lint:fix": "lerna run lint:fix --stream",
+    "build": "lerna run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run lint --stream --since --concurrency 1"
+    }
+  }
+}

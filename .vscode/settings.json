@@ -1,0 +1,9 @@
+{
+    "eslint.workingDirectories": [
+        "backend",
+        "frontend"
+    ],
+    "path-intellisense.mappings": {
+        "@": "${workspaceRoot}/frontend/src"
+    }
+}
